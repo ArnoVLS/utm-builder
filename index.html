@@ -1,28 +1,46 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>UTM Builder</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-Ly2Bg/tgKeO6mK4rBkayaR8JkXojczLjXdTrLreT7rgywL1zzyyw28IhCwDjnxmJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://acdn.be/agoria.be/css/styles.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
+    <section class="body-section">
+        <div class="container">
+            <div class="text-center">
+                <h1>UTM Builder Test</h1>
+                <select id="type"></select>
+            </div>
 
-    <h1>UTM Builder Test</h1>
+            <input type="text" id="destinationUrl" placeholder="https://www.agoria.be/...">
 
-    <input type="text" id="destinationUrl" placeholder="https://www.agoria.be/...">
+            <select id="source"></select>
 
-    <select id="source"></select>
+            <select id="medium"></select>
 
-    <select id="medium"></select>
+            <select id="campaign"></select>
 
-    <select id="campaign"></select>
+            <button id="generateBtn" class="btn btn-primary">
+                Genereer URL
+            </button>
 
-    <button id="generateBtn">
-        Genereer URL
-    </button>
+            <div id="result"></div>
+        </div>
+    </section>
 
-    <textarea id="result"></textarea>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-XcYaA/msKMmA4Cs247uZF/Ur7ub741X95W02fljwW3m343adF/uheF/LW+jA7Cbd"
+        crossorigin="anonymous"></script>
 
     <script src="https://cdn/npm/@supabase/supabase-js@2"></script>
     <script src="/js/supabase.js"></script>
@@ -30,4 +48,5 @@
     <script src="/js/app.js"></script>
 
 </body>
+
 </html>
