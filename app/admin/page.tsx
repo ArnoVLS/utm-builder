@@ -247,30 +247,6 @@ export default function AdminPage() {
             </table>
           )}
         </section>
-
-        <section className="card">
-          <h2>Administratie</h2>
-
-          <p>
-            Gebruik dit enkel voor
-            campaign- en eventbeheer.
-          </p>
-
-          <hr />
-
-          <h3>Historiek</h3>
-
-          <p>
-            Verwijdert alle opgeslagen URL's.
-          </p>
-
-          <button
-            className="btn danger"
-            onClick={clearHistory}
-          >
-            Historiek leegmaken
-          </button>
-        </section>
       </div>
     </main>
   );
